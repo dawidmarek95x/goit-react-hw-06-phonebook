@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/goit-react-hw-06-phonebook/static/css/main.e1e13f1f.css",
-    "main.js": "/goit-react-hw-06-phonebook/static/js/main.955a2456.js",
-    "index.html": "/goit-react-hw-06-phonebook/index.html",
-    "static/media/cross.svg": "/goit-react-hw-06-phonebook/static/media/cross.d5ab96da0d54fcdcdcde3e1f38b2c478.svg",
-    "static/media/address-book.svg": "/goit-react-hw-06-phonebook/static/media/address-book.440464a8f2c2eab05ade28ee1a3a5e8e.svg",
-    "static/media/phone.svg": "/goit-react-hw-06-phonebook/static/media/phone.9553808c2045790e30e550f74b5bed2b.svg",
-    "main.e1e13f1f.css.map": "/goit-react-hw-06-phonebook/static/css/main.e1e13f1f.css.map",
-    "main.955a2456.js.map": "/goit-react-hw-06-phonebook/static/js/main.955a2456.js.map"
+    "main.css": "/static/css/main.e1e13f1f.css",
+    "main.js": "/static/js/main.074aee56.js",
+    "static/media/cross.svg": "/static/media/cross.d5ab96da0d54fcdcdcde3e1f38b2c478.svg",
+    "index.html": "/index.html",
+    "static/media/address-book.svg": "/static/media/address-book.440464a8f2c2eab05ade28ee1a3a5e8e.svg",
+    "static/media/phone.svg": "/static/media/phone.9553808c2045790e30e550f74b5bed2b.svg",
+    "main.e1e13f1f.css.map": "/static/css/main.e1e13f1f.css.map",
+    "main.074aee56.js.map": "/static/js/main.074aee56.js.map"
   },
   "entrypoints": [
     "static/css/main.e1e13f1f.css",
-    "static/js/main.955a2456.js"
+    "static/js/main.074aee56.js"
   ]
 }
