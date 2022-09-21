@@ -38,7 +38,7 @@ export const Button = styled.button`
   }
 `;
 
-export const Link = styled(Button)`
+export const TelBtn = styled(Button)`
   margin-left: auto;
   background-image: url(${phoneIcon});
   background-size: 10px;

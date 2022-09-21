@@ -1,10 +1,12 @@
-import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
+import { setContactsFilter } from 'redux/contactsReducer';
 import { Input, Label } from './Filter.styled';
 
-export const Filter = ({setFilter}) => {
+export const Filter = () => {
+  const dispatch = useDispatch();
   const filterContacts = (e) => {
     const value = e.target.value.toLowerCase();
-    setFilter(value);
+    dispatch(setContactsFilter(value));
   }
 
   return (
@@ -18,10 +20,6 @@ export const Filter = ({setFilter}) => {
       </Label>
     </>
   )
-}
-
-Filter.propTypes = {
-  setFilter: PropTypes.func.isRequired,
 }
 
 export default Filter;
