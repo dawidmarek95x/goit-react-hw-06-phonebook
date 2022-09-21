@@ -1,9 +1,7 @@
-import { useEffect } from 'react';
 import { Button, Form, Input, Label } from './ContactForm.styled';
 import { nanoid } from '@reduxjs/toolkit';
 import { useDispatch, useSelector } from 'react-redux';
 import { addContact } from 'redux/contactsReducer';
-import { saveToLocalStorage } from 'services/localStorageSupport';
 
 const ContactForm = () => {
   const contacts = useSelector(state => state.contacts);
@@ -33,10 +31,6 @@ const ContactForm = () => {
       form.reset();
     }
   };
-
-  useEffect(() => {
-    saveToLocalStorage('contacts', contacts);
-  }, [contacts]);
 
   return (
     <Form onSubmit={addNewContact}>

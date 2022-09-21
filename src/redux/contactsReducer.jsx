@@ -1,8 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { loadFromLocalStorage } from 'services/localStorageSupport';
 
 const initialState = {
-  contacts: loadFromLocalStorage("contacts"),
+  contacts: [],
   filter: "",
 }
 
