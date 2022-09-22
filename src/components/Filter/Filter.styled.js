@@ -21,16 +21,12 @@ export const Input = styled.input`
   &:hover {
     border-color:rgb(59, 59, 59);
     box-shadow: 0px 0px 3px 0px rgba(59, 59, 59, 0.5);
-    -webkit-box-shadow: 0px 0px 3px 0px rgba(59, 59, 59, 0.5);
-    -moz-box-shadow: 0px 0px 3px 0px rgba(59, 59, 59, 0.5);
     transition: border-color 400ms, box-shadow 400ms;
   }
 
   &:focus {
-    border-color:rgba(6, 114, 60, 0.7);
-    box-shadow: 0px 0px 4px 0px rgba(6, 114, 60, 0.7);
-    -webkit-box-shadow: 0px 0px 4px 0px rgba(6, 114, 60, 0.7);
-    -moz-box-shadow: 0px 0px 4px 0px rgba(6, 114, 60, 0.7);
+    border-color: rgba(138, 63, 50, 0.8);
+    box-shadow: 0px 0px 4px 0px rgba(138, 63, 50, 0.8);
     transition: border-color 600ms, box-shadow 600ms;
   }
 `;

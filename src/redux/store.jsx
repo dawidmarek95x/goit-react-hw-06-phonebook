@@ -1,17 +1,17 @@
-import { configureStore } from "@reduxjs/toolkit";
-import { persistReducer, persistStore} from 'redux-persist';
-import storage from "redux-persist/lib/storage";
-import thunk from "redux-thunk";
-import contactsReducer from './contactsReducer';
+import storage from 'redux-persist/lib/storage';
+import { persistReducer, persistStore } from 'redux-persist';
+import { reducer } from './reducer';
+import { configureStore } from '@reduxjs/toolkit';
+import thunk from 'redux-thunk';
 
 const persistConfig = {
-  key: "contacts",
+  key: 'contacts',
   version: 1,
   storage,
-  whitelist: ["contacts"],
+  whitelist: ['contacts'],
 };
 
-const persistedReducer = persistReducer(persistConfig, contactsReducer);
+const persistedReducer = persistReducer(persistConfig, reducer);
 
 export let store = configureStore({
   reducer: persistedReducer,

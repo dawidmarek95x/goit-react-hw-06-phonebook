@@ -7,19 +7,27 @@ export const ContactList = () => {
   const filter = useSelector(state => state.filter);
 
   const filteredContacts = contacts
-      .filter(c => c.name.toLowerCase().includes(filter))
-      .sort((a, b) => a.name.localeCompare(b.name));
+    .filter(c => c.name.toLowerCase().includes(filter))
+    .sort((a, b) => a.name.localeCompare(b.name));
 
   return (
     <>
-      {(filteredContacts.length !== 0)
-        ? <List>
-            {filteredContacts.map(c => <ContactElement key={c.id} id={c.id} name={c.name} number={c.number}/>)}
-          </List>
-        : <Info>No contacts in the phonebook</Info>
-      }
+      {filteredContacts.length !== 0 ? (
+        <List>
+          {filteredContacts.map(c => (
+            <ContactElement
+              key={c.id}
+              id={c.id}
+              name={c.name}
+              number={c.number}
+            />
+          ))}
+        </List>
+      ) : (
+        <Info>No contacts in the phonebook</Info>
+      )}
     </>
-  )
-}
+  );
+};
 
 export default ContactList;
